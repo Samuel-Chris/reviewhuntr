@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Razer Huntsman Elite Gaming - Review - ReviewHuntr.com - The best reviews on the internet.</title><meta content="ReviewHuntr.com - The best reviews on the internet." property="og:site_name"><meta content="Razer Huntsman Elite Gaming - Review" property="og:title"><meta content="article" property="og:type"><meta content="ReviewHuntr.com is creating the best reviews on the internet." property="og:description"><meta content="https://reviewhuntr.com/reviews/Razer-Huntsman-Elite-Gaming-Review/" property="og:url"><meta content="2019-11-10T00:00:00+00:00" property="article:published_time"><meta content="https://reviewhuntr.com/about/" property="article:author"><meta content="https://reviewhuntr.com/assets/img/Razer-Huntsman.jpg" property="og:image"><meta content="Razer" property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@"><meta name="twitter:creator" content="@"><meta name="twitter:title" content="Razer Huntsman Elite Gaming - Review"><meta name="twitter:url" content="https://reviewhuntr.com/reviews/Razer-Huntsman-Elite-Gaming-Review/"><meta name="twitter:description" content="ReviewHuntr.com is creating the best reviews on the internet."><meta name="twitter:image:src" content="https://reviewhuntr.com/assets/img/Razer-Huntsman.jpg"><meta name="description" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta property="og:image" content="https://reviewhuntr.com/assets/img/logo/500pxLogo.jpg"><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicon/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="theme-color" content="#263959"><meta name="msapplication-navbutton-color" content="#263959"><meta name="apple-mobile-web-app-status-bar-style" content="#263959"><link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="/assets/css/main.css"> <script src='https://platform-api.sharethis.com/js/sharethis.js#property=5d90b2b1ddd24e0019459cbb&product=inline-share-buttons'></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="/assets/js/infinite.js"></script></head><body><div class="wrapper"> <aside class="sidebar"> <header><div class="about"><div class="cover-author-image"> <a href="/"><img src="/assets/img/logo/500pxLogo.jpg" alt="ReviewHuntr"></a></div><p>The best reviews on the internet.</p></div> <nav class="nav"> <a class="nav-item" href="/reviews">Reviews</a> <a class="nav-item" href="https://discord.gg/YTd6pYa" target="_blank">Discord</a> <a class="nav-item" href="/about">About</a> </nav> </header> <footer><div class="copyright"><p>2019 © ReviewHuntr</p></div> </footer> </aside><div class="content-box clearfix"> <script> 
+var reviewHTML = '<div class="reviews">'+
+            '  <div id="suggested-reviews" class="suggested-reviews">'+
+            '    <h4>Suggested reviews for you</h4>'+
+            '    <ul class="suggested-reviews-list">'+
+            '      <li><a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-4" id="suggested-reviews-4"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-5" id="suggested-reviews-5"></a></li>'+
+            '    </ul>'+
+            '  </div>'+
+            '</div>';
+
+    window.addEventListener('load', function() {
+      fetch(window.location.origin+"/api-reviews.json")
+      .then(res => res.json())
+      .then(out => {
+
+        let entry = document.getElementsByClassName("wrap-content")[0]
+        let reviews = document.createElement('div')
+        reviews.innerHTML = reviewHTML
+
+        let afterMe = entry.children[Math.ceil(entry.childElementCount / 2) - 1] 
+
+        entry.insertBefore(reviews, afterMe)
+
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+        }
+    
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
+
+
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script><article class="article-page"><div class="page-content"><div class="page-cover-image"> <figure> <img class="page-image" src="/assets/img/posts/Razer-Huntsman.jpg" alt="Razer+Huntsman+Elite+Gaming+-+Review"></figure></div><div class="wrap-content"> <header class="header-page"><h1 class="page-title">Razer Huntsman Elite Gaming - Review</h1><span class="post-author">Hamza Tariq</span><div class="page-date"><span>2019, Nov 10    </span></div> </header><div class="page-share"><div class="sharethis-inline-share-buttons"></div></div><p>Mechanical keyboards are the pinnacle of typing technology, combining design and functionality into a single product. Mechanical Keyboards have been around for decades now, but the rise of gaming has caused an influx of demand in the community. Nowadays, a good quality mechanical keyboard is the standard for gaming and oftentimes, office work. Whether you type for work or recreation, this keyboard will take your abilities to the next level. Combining some of the latest hardware on the market with some of the most robust software on the planet, the <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> is the perfect keyboard for anyone. So you may be wondering, what is a mechanical keyboard? Well, I’d be happy to enlighten you. The Keyboard you probably own right now is a traditional rubber dome keyboard, with a simple rubbery feel on each click. What sets the mechanical keyboard apart is that each button has its own switch that generates a satisfying click. The <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> holds up to the quality Mechanical keyboards come with, having a very durable body and a professionally braided cable. The body is made of premium aluminium and covered with a matte finish. Overall, the <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> holds up to many of the stereotypical Mechanical Keyboard expectations. The most defining feature of the <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> is its Opto-Mechanical key switches. Normal mechanical keyboards press on a key switch which goes on to inform the computer about the keypress. The <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span>, however, uses light to further increase the input speed. A sensor inside each key switch detects if a key has been pressed by being activated from an internal laser. Essentially, you are typing at the speed of light! The enhanced key switch is rated to survive up to 100 million keystrokes, double the industry standard. The <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> also has 3 dedicated and tactile media control keys that are sure to grab anyone’s attention. These knobs allow for quick and efficient control over any media you could imagine. From music volume to skipping tracks, it can all be done on your keyboard. Overall, the key switches on the <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> make it stand out in front of competitors, and truly define this incredible product. You may be wondering who exactly this keyboard is for, and the answer is everyone. Even though it is heavily marketed towards gamers, using a comfy mechanical keyboard on those long office hours will improve your mood and efficiency. The <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> lets you type a fair but faster, so you will no doubt enjoy it. For gaming, this keyboard delivers anything you could need. Quick macros allow for you to instantly act out difficult key combos in your favourite MMO. The <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> packs a 10 key rollover, so it can register up to 10 keys at once. This is perfect for those of us who love multi-key key binds. Overall, this keyboard is good for just about anyone. Razer Chroma is one of the most customizable lighting platforms anywhere. Through the backlighting on your keyboard and wrist rest, you can make incredible light effects. From, having custom effects for every game to syncing your smart lights, Chroma can transfer your whole room into the game. You can even use the hundreds of premade effects available in Chroma Studio made by users like you. The <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> has 38 different lighting zones that you can edit to your heart’s content, the wrist rest has LED underglow, so you can illuminate every inch of your desk. Razer Synapse is a powerful macro tool that can turn the <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> into a gaming beast. You can make key-binds to simultaneously press up to 50 keys. The <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> also has onboard storage, so your macros will be available on any computer you plug it into. This saves time at tournaments where you want to bring your own macros. A special key exists to enable gaming mode, giving you the options to disable the Windows key and the infamous Alt+F4 command. Never worry about pressing the wrong key again. Furthermore, Razer hypershift allows you to access another full set of keys with the press of a single key. This keyboard truly has it all for gamers. We all know that Mechanical Keyboards are only meant for PC’s, but Razer has destroyed that notion with the <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span>. You can now plug your <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span> into any Xbox One and use it for basic input. This transforms the traditional notion and adds even more to the <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite</a></span>’s appeal.</p><h2 id="conclusion">Conclusion</h2><p>Overall, the <span><a class="product-link" href="https://www.amazon.com/dp/B07DHNX18W?tag=reviewhuntr-20" target="_blank">Razer Huntsman Elite Gaming</a></span> is a superb example of what money can buy you these days. A top-notch and cutting edge mechanical keyboard with powerful software to go along with it. It deserves its 4.4-star rating on Amazon.</p><div class="page-footer"><div class="page-share"><div class="sharethis-inline-share-buttons"></div></div><div class="page-tag"><a href="https://reviewhuntr.com/reviews#Razer" class="tag"># Razer</a></div></div><div> ReviewHuntr is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com.</div></div></div> </article><div class="post" style="display:none"><a class="post-thumbnail" style="background-image:url('/assets/img/posts/Razer-Huntsman.jpg')" href="/reviews/Razer-Huntsman-Elite-Gaming-Review/"></a><div class="post-content"><h2 class="post-title"><a href="/reviews/Razer-Huntsman-Elite-Gaming-Review/">Razer Huntsman Elite Gaming - Review</a></h2><p>Mechanical keyboards are the pinnacle of typing technology, combining design and functionality into a single product. Mechanical Keyboards have been around for decades now, but the rise of gaming has...</p><span class="post-author">Hamza Tariq—</span> <span class="post-words">4 minute read</span></div></div></div><div class="infinite-spinner"></div></div><script>-1!==document.location.hostname.search("reviewhuntr.com")&&(!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-121890486-4","auto"),ga("send","pageview"))</script><script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "headline": "Razer Huntsman Elite Gaming - Review",
+      "description": "Mechanical keyboards are the pinnacle of typing technology, combining design and functionality into a single product. Mechanical Keyboards have been around for decades now, but the rise of gaming has caused an influx of demand in the community. Nowadays, a good quality mechanical keyboard is the standard for gaming and oftentimes, office work. Whether you type for work or recreation, this keyboard will take your abilities to the next level. Combining some of the latest hardware on the market with some of the most robust software on the planet, the Razer Huntsman Elite is the perfect keyboard for anyone. So...",
+      "image": ["https://reviewhuntr.com/assets/img/posts/Razer-Huntsman.jpg"],
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://reviewhuntr.com/reviews/Razer-Huntsman-Elite-Gaming-Review/"
+      },
+      "datePublished": "2019-11-10 00:00:00 +0000",
+      "dateModified": "2019-11-10 00:00:00 +0000",
+      "isAccessibleForFree": "True",
+      "itemReviewed": {
+          "@type": ["Product"],
+          "name": "Razer Huntsman Elite Gaming",
+          "productID": "asin:B07DHNX18W",
+          "sku": "asin:B07DHNX18W",
+          "review": {
+            "itemReviewed": "Razer Huntsman Elite Gaming",
+            "author": {
+              "@type": "Person",
+              "name": "Hamza Tariq"
+            },
+            "reviewAspect": "Product opinion reviews",
+            "reviewBody": "Mechanical keyboards are the pinnacle of typing technology, combining design and functionality into a single product. Mechanical Keyboards have been around for decades now, but the rise of gaming has caused an influx of demand in the community. Nowadays, a good quality mechanical keyboard is the standard for gaming and oftentimes, office work. Whether you type for work or recreation, this keyboard will take your abilities to the next level. Combining some of the latest hardware on the market with some of the most robust software on the planet, the Razer Huntsman Elite is the perfect keyboard for anyone.    So you may be wondering, what is a mechanical keyboard? Well, I’d be happy to enlighten you. The Keyboard you probably own right now is a traditional rubber dome keyboard, with a simple rubbery feel on each click. What sets the mechanical keyboard apart is that each button has its own switch that generates a satisfying click. The Razer Huntsman Elite holds up to the quality Mechanical keyboards come with, having a very durable body and a professionally braided cable. The body is made of premium aluminium and covered with a matte finish. Overall, the Razer Huntsman Elite holds up to many of the stereotypical Mechanical Keyboard expectations.    The most defining feature of the Razer Huntsman Elite is its Opto-Mechanical key switches. Normal mechanical keyboards press on a key switch which goes on to inform the computer about the keypress. The Razer Huntsman Elite, however, uses light to further increase the input speed. A sensor inside each key switch detects if a key has been pressed by being activated from an internal laser. Essentially, you are typing at the speed of light! The enhanced key switch is rated to survive up to 100 million keystrokes, double the industry standard. The Razer Huntsman Elite also has 3 dedicated and tactile media control keys that are sure to grab anyone’s attention. These knobs allow for quick and efficient control over any media you could imagine. From music volume to skipping tracks, it can all be done on your keyboard. Overall, the key switches on the Razer Huntsman Elite make it stand out in front of competitors, and truly define this incredible product.    You may be wondering who exactly this keyboard is for, and the answer is everyone. Even though it is heavily marketed towards gamers, using a comfy mechanical keyboard on those long office hours will improve your mood and efficiency. The Razer Huntsman Elite lets you type a fair but faster, so you will no doubt enjoy it. For gaming, this keyboard delivers anything you could need. Quick macros allow for you to instantly act out difficult key combos in your favourite MMO. The Razer Huntsman Elite packs a 10 key rollover, so it can register up to 10 keys at once. This is perfect for those of us who love multi-key key binds. Overall, this keyboard is good for just about anyone.    Razer Chroma is one of the most customizable lighting platforms anywhere. Through the backlighting on your keyboard and wrist rest, you can make incredible light effects. From, having custom effects for every game to syncing your smart lights, Chroma can transfer your whole room into the game. You can even use the hundreds of premade effects available in Chroma Studio made by users like you. The Razer Huntsman Elite has 38 different lighting zones that you can edit to your heart’s content, the wrist rest has LED underglow, so you can illuminate every inch of your desk.    Razer Synapse is a powerful macro tool that can turn the Razer Huntsman Elite into a gaming beast. You can make key-binds to simultaneously press up to 50 keys. The Razer Huntsman Elite also has onboard storage, so your macros will be available on any computer you plug it into. This saves time at tournaments where you want to bring your own macros. A special key exists to enable gaming mode, giving you the options to disable the Windows key and the infamous Alt+F4 command. Never worry about pressing the wrong key again. Furthermore, Razer hypershift allows you to access another full set of keys with the press of a single key. This keyboard truly has it all for gamers.    We all know that Mechanical Keyboards are only meant for PC’s, but Razer has destroyed that notion with the Razer Huntsman Elite. You can now plug your Razer Huntsman Elite into any Xbox One and use it for basic input. This transforms the traditional notion and adds even more to the Razer Huntsman Elite’s appeal.  Conclusion  Overall, the Razer Huntsman Elite Gaming is a superb example of what money can buy you these days. A top-notch and cutting edge mechanical keyboard with powerful software to go along with it. It deserves its 4.4-star rating on Amazon.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "ratingCount": "1"
+          },
+          "offers": "",
+          "brand": {
+            "@type": "Thing",
+            "name": ""
+          },
+          "description": "Razer Huntsman Elite Gaming",
+          "image": ["https://reviewhuntr.com/assets/img/posts/Razer-Huntsman.jpg"]
+      },
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "author": {
+          "@type": "Person",
+          "name": "Hamza Tariq",
+          "description": "",
+          "sameAs": "https://reviewhuntr.com/about",
+          "image": {
+              "@type": "ImageObject",
+              "url": ""
+          },
+          "givenName": "",
+          "familyName": "",
+          "alternateName": "Hamza Tariq",
+          "publishingPrinciples": "https://reviewhuntr.com/about/"
+      },
+      "publisher": {
+          "@type": "Organization",
+          "name": "ReviewHuntr",
+          "description": "ReviewHuntr.com is creating the best reviews on the internet.",
+          "sameAs": "https://reviewhuntr.com",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://reviewhuntr.com/assets/img/logo/500pxLogo.jpg"
+          },
+          "publishingPrinciples": "https://reviewhuntr.com/about/"
+      }
+  }
+</script></body></html>
