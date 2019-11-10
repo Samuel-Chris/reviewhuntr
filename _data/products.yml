@@ -310,3 +310,9 @@
   short-name: GeForce RTX 2080
   imgs: [ "EVGA-GeForce.jpg" ]
   asin: B07N889XT8
+- id: 54
+  name: Razer Huntsman Elite Gaming
+  short-name: Razer Huntsman Elite
+  imgs: [ "Razer-Huntsman.jpg" ]
+  asin: B07DHNX18W
+  
