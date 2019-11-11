@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Razer Phone 2 - Review - ReviewHuntr.com - The best reviews on the internet.</title><meta content="ReviewHuntr.com - The best reviews on the internet." property="og:site_name"><meta content="Razer Phone 2 - Review" property="og:title"><meta content="article" property="og:type"><meta content="ReviewHuntr.com is creating the best reviews on the internet." property="og:description"><meta content="https://reviewhuntr.com/reviews/Razer-Phone-Review/" property="og:url"><meta content="2019-11-11T00:00:00+00:00" property="article:published_time"><meta content="https://reviewhuntr.com/about/" property="article:author"><meta content="https://reviewhuntr.com/assets/img/Razer-phone.jpg" property="og:image"><meta content="Razer" property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@"><meta name="twitter:creator" content="@"><meta name="twitter:title" content="Razer Phone 2 - Review"><meta name="twitter:url" content="https://reviewhuntr.com/reviews/Razer-Phone-Review/"><meta name="twitter:description" content="ReviewHuntr.com is creating the best reviews on the internet."><meta name="twitter:image:src" content="https://reviewhuntr.com/assets/img/Razer-phone.jpg"><meta name="description" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta property="og:image" content="https://reviewhuntr.com/assets/img/logo/500pxLogo.jpg"><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicon/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="theme-color" content="#263959"><meta name="msapplication-navbutton-color" content="#263959"><meta name="apple-mobile-web-app-status-bar-style" content="#263959"><link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="/assets/css/main.css"> <script src='https://platform-api.sharethis.com/js/sharethis.js#property=5d90b2b1ddd24e0019459cbb&product=inline-share-buttons'></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="/assets/js/infinite.js"></script></head><body><div class="wrapper"> <aside class="sidebar"> <header><div class="about"><div class="cover-author-image"> <a href="/"><img src="/assets/img/logo/500pxLogo.jpg" alt="ReviewHuntr"></a></div><p>The best reviews on the internet.</p></div> <nav class="nav"> <a class="nav-item" href="/reviews">Reviews</a> <a class="nav-item" href="https://discord.gg/YTd6pYa" target="_blank">Discord</a> <a class="nav-item" href="/about">About</a> </nav> </header> <footer><div class="copyright"><p>2019 © ReviewHuntr</p></div> </footer> </aside><div class="content-box clearfix"> <script> 
+var reviewHTML = '<div class="reviews">'+
+            '  <div id="suggested-reviews" class="suggested-reviews">'+
+            '    <h4>Suggested reviews for you</h4>'+
+            '    <ul class="suggested-reviews-list">'+
+            '      <li><a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-4" id="suggested-reviews-4"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-5" id="suggested-reviews-5"></a></li>'+
+            '    </ul>'+
+            '  </div>'+
+            '</div>';
+
+    window.addEventListener('load', function() {
+      fetch(window.location.origin+"/api-reviews.json")
+      .then(res => res.json())
+      .then(out => {
+
+        let entry = document.getElementsByClassName("wrap-content")[0]
+        let reviews = document.createElement('div')
+        reviews.innerHTML = reviewHTML
+
+        let afterMe = entry.children[Math.ceil(entry.childElementCount / 2) - 1] 
+
+        entry.insertBefore(reviews, afterMe)
+
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+        }
+    
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
+
+
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script><article class="article-page"><div class="page-content"><div class="page-cover-image"> <figure> <img class="page-image" src="/assets/img/posts/Razer-phone.jpg" alt="Razer+Phone+2+-+Review"></figure></div><div class="wrap-content"> <header class="header-page"><h1 class="page-title">Razer Phone 2 - Review</h1><span class="post-author">Hamza Tariq</span><div class="page-date"><span>2019, Nov 11    </span></div> </header><div class="page-share"><div class="sharethis-inline-share-buttons"></div></div><p>Mobile phones have been catered towards the mainstream market since their inception, but today gamers and power-hungry enthusiasts can rejoice. The all-new <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> is packed with cutting edge hardware and sophisticated software. With enough power to make any mobile gamer drool, the <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> hits the sweet spot in regards to price and performance. Coming in at just shy of 400$, it’s much cheaper than the latest thousand dollar iPhones. Overall, the phone is built with a fairly premium feel. You can opt for a matte black finish, or go with the regal satin finish. The phone has one of the best displays on the market, and hardware to match it. The phone also has Razer’s innovative Chroma software for all your lighting needs. The phone comes with android 9, and a free version of the acclaimed Nova Launcher. The dual front-facing speakers are super loud and feature Dolby’s Atmos technology, which seeks to enhance mobile audio for specific use cases. Overall, the <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> is a solid phone, and ill be getting into the specifics in the next section. The <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> has one of the best displays of any mobile phone. A 120Hz panel allows you to experience ultra-high refresh rate gaming. Most of you are probably reading this review on a standard 60Hz monitor, half as fast as the <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span>’s panel. Coming in at around 5.72 inches, it’s not a small display by any means. Gorilla Glass 5 ensures your phone safety, being rated to survive a 1.6m fall 80% of the time. The <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> truly has a world-class display. Most people buy this phone for gaming and it doesn’t disappoint at all in that department. If you’re looking for crisp audio to any headset, the onboard USB-C DAC port will give you high fidelity 24-bit audio. If you’re a speaker person, the <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> won’t disappoint. Dual front-facing speakers provide clean audio, and Dolby Atmos ensures it caters to your use case. If you’re listening to music or talking with friends, Atmos will cater to your needs. The Qualcomm Snapdragon 845 this phone comes with provides the power you need to tackle even the most graphically demanding games. From PUBG to Fortnite, you can be sure you’ll be running them at the highest graphical presets. An onboard vapour chamber provides efficient cooling for this powerful processor. Graphics matter and the Adreno 630 GPU was born to deliver them. Being one of the fastest mobile GPUs in existence, it crushes and mobile game at any setting. Overall, the <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> lives and breathes gaming. Battery life is important, especially so when you are gaming. Imagine being in a 1v1 situation in your favourite battle total game, only for your phone to power off from the low battery life of your generic phone. The <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> packs a 4,000mAh battery, enough to easily go through a full day of demanding usage. The USB-C port allows you to charge your phone in no time at all. Powering the powerful display and CPU is no small task, and the battery delivers with flying colours. Few users have any complaints about the impressive battery. Memory is something that mobile gamers often overlook, but it matters nonetheless. Modern games are now always a few gigabytes, so it’s important to have space for them. The <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> has a comfortable 64 Gigabytes of UFS storage. This isn’t as big as some of the modern flagships, but the <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> has a trick up its sleeve. It features a micro SD slot that can hold up to 1 Terabyte of flash memory. Aside from storage, RAM is also important in terms of memory. The <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> comes with a nice 8GB of LPDDR4X of RAM, more than enough to comfortably multitask and play games. Gamers aren’t the type of people who require an amazing camera, but Razer still delivered in this department. The front camera is a decent 8MP one, recording up to 1080p video. This isn’t super cutting edge but more of a nice to have feature. The rear camera, however, is a completely different story. It has a dual-camera setup with image stabilization built-in. The first camera is a stabilized 12MP wide shot lens. The second one is a telephoto with a 12MP sensor. The dual-tone flash makes night time pictures a breeze. You can record video up to 4k, fairly impressive in a gaming phone like this. Overall, the <span><a class="product-link" href="https://www.amazon.com/dp/B07H9V6PHZ?tag=reviewhuntr-20" target="_blank">Razer Phone 2</a></span> packs a good camera on a phone that didn’t even need it.</p><h2 id="conclusion">Conclusion</h2><p>Overall, this is an amazing phone catered mostly to gamers. It’s feature-rich and allows you all the comforts of a flagship for a fraction of the price. A 4-star rating on Amazon is nothing to scoff at either.</p><div class="page-footer"><div class="page-share"><div class="sharethis-inline-share-buttons"></div></div><div class="page-tag"><a href="https://reviewhuntr.com/reviews#Razer" class="tag"># Razer</a></div></div><div> ReviewHuntr is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com.</div></div></div> </article><div class="post" style="display:none"><a class="post-thumbnail" style="background-image:url('/assets/img/posts/Razer-phone.jpg')" href="/reviews/Razer-Phone-Review/"></a><div class="post-content"><h2 class="post-title"><a href="/reviews/Razer-Phone-Review/">Razer Phone 2 - Review</a></h2><p>Mobile phones have been catered towards the mainstream market since their inception, but today gamers and power-hungry enthusiasts can rejoice. The all-new Razer Phone 2 is packed with cutting edge...</p><span class="post-author">Hamza Tariq—</span> <span class="post-words">4 minute read</span></div></div></div><div class="infinite-spinner"></div></div><script>-1!==document.location.hostname.search("reviewhuntr.com")&&(!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-121890486-4","auto"),ga("send","pageview"))</script><script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "headline": "Razer Phone 2 - Review",
+      "description": "Mobile phones have been catered towards the mainstream market since their inception, but today gamers and power-hungry enthusiasts can rejoice. The all-new Razer Phone 2 is packed with cutting edge hardware and sophisticated software. With enough power to make any mobile gamer drool, the Razer Phone 2 hits the sweet spot in regards to price and performance. Coming in at just shy of 400$, it’s much cheaper than the latest thousand dollar iPhones. Overall, the phone is built with a fairly premium feel. You can opt for a matte black finish, or go with the regal satin finish. The phone...",
+      "image": ["https://reviewhuntr.com/assets/img/posts/Razer-phone.jpg"],
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://reviewhuntr.com/reviews/Razer-Phone-Review/"
+      },
+      "datePublished": "2019-11-11 00:00:00 +0000",
+      "dateModified": "2019-11-11 00:00:00 +0000",
+      "isAccessibleForFree": "True",
+      "itemReviewed": {
+          "@type": ["Product"],
+          "name": "Razer Phone 2",
+          "productID": "asin:B07H9V6PHZ",
+          "sku": "asin:B07H9V6PHZ",
+          "review": {
+            "itemReviewed": "Razer Phone 2",
+            "author": {
+              "@type": "Person",
+              "name": "Hamza Tariq"
+            },
+            "reviewAspect": "Product opinion reviews",
+            "reviewBody": "Mobile phones have been catered towards the mainstream market since their inception, but today gamers and power-hungry enthusiasts can rejoice. The all-new Razer Phone 2 is packed with cutting edge hardware and sophisticated software. With enough power to make any mobile gamer drool, the Razer Phone 2 hits the sweet spot in regards to price and performance. Coming in at just shy of 400$, it’s much cheaper than the latest thousand dollar iPhones. Overall, the phone is built with a fairly premium feel. You can opt for a matte black finish, or go with the regal satin finish. The phone has one of the best displays on the market, and hardware to match it. The phone also has Razer’s innovative Chroma software for all your lighting needs. The phone comes with android 9, and a free version of the acclaimed Nova Launcher. The dual front-facing speakers are super loud and feature Dolby’s Atmos technology, which seeks to enhance mobile audio for specific use cases. Overall, the Razer Phone 2 is a solid phone, and ill be getting into the specifics in the next section.  The Razer Phone 2 has one of the best displays of any mobile phone. A 120Hz panel allows you to experience ultra-high refresh rate gaming. Most of you are probably reading this review on a standard 60Hz monitor, half as fast as the Razer Phone 2’s panel. Coming in at around 5.72 inches, it’s not a small display by any means. Gorilla Glass 5 ensures your phone safety, being rated to survive a 1.6m fall 80% of the time. The Razer Phone 2 truly has a world-class display.  Most people buy this phone for gaming and it doesn’t disappoint at all in that department. If you’re looking for crisp audio to any headset, the onboard USB-C DAC port will give you high fidelity 24-bit audio. If you’re a speaker person, the Razer Phone 2 won’t disappoint. Dual front-facing speakers provide clean audio, and Dolby Atmos ensures it caters to your use case. If you’re listening to music or talking with friends, Atmos will cater to your needs. The Qualcomm Snapdragon 845 this phone comes with provides the power you need to tackle even the most graphically demanding games. From PUBG to Fortnite, you can be sure you’ll be running them at the highest graphical presets. An onboard vapour chamber provides efficient cooling for this powerful processor. Graphics matter and the Adreno 630 GPU was born to deliver them. Being one of the fastest mobile GPUs in existence, it crushes and mobile game at any setting. Overall, the Razer Phone 2 lives and breathes gaming.  Battery life is important, especially so when you are gaming. Imagine being in a 1v1 situation in your favourite battle total game, only for your phone to power off from the low battery life of your generic phone. The Razer Phone 2 packs a 4,000mAh battery, enough to easily go through a full day of demanding usage. The USB-C port allows you to charge your phone in no time at all. Powering the powerful display and CPU is no small task, and the battery delivers with flying colours. Few users have any complaints about the impressive battery.  Memory is something that mobile gamers often overlook, but it matters nonetheless. Modern games are now always a few gigabytes, so it’s important to have space for them. The Razer Phone 2 has a comfortable 64 Gigabytes of UFS storage. This isn’t as big as some of the modern flagships, but the Razer Phone 2 has a trick up its sleeve. It features a micro SD slot that can hold up to 1 Terabyte of flash memory. Aside from storage, RAM is also important in terms of memory. The Razer Phone 2 comes with a nice 8GB of LPDDR4X of RAM, more than enough to comfortably multitask and play games.   Gamers aren’t the type of people who require an amazing camera, but Razer still delivered in this department. The front camera is a decent 8MP one, recording up to 1080p video. This isn’t super cutting edge but more of a nice to have feature. The rear camera, however, is a completely different story. It has a dual-camera setup with image stabilization built-in. The first camera is a stabilized 12MP wide shot lens. The second one is a telephoto with a 12MP sensor. The dual-tone flash makes night time pictures a breeze. You can record video up to 4k, fairly impressive in a gaming phone like this. Overall, the Razer Phone 2 packs a good camera on a phone that didn’t even need it.  Conclusion  Overall, this is an amazing phone catered mostly to gamers. It’s feature-rich and allows you all the comforts of a flagship for a fraction of the price. A 4-star rating on Amazon is nothing to scoff at either.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "ratingCount": "1"
+          },
+          "offers": "",
+          "brand": {
+            "@type": "Thing",
+            "name": ""
+          },
+          "description": "Razer Phone 2",
+          "image": ["https://reviewhuntr.com/assets/img/posts/Razer-phone.jpg"]
+      },
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "author": {
+          "@type": "Person",
+          "name": "Hamza Tariq",
+          "description": "",
+          "sameAs": "https://reviewhuntr.com/about",
+          "image": {
+              "@type": "ImageObject",
+              "url": ""
+          },
+          "givenName": "",
+          "familyName": "",
+          "alternateName": "Hamza Tariq",
+          "publishingPrinciples": "https://reviewhuntr.com/about/"
+      },
+      "publisher": {
+          "@type": "Organization",
+          "name": "ReviewHuntr",
+          "description": "ReviewHuntr.com is creating the best reviews on the internet.",
+          "sameAs": "https://reviewhuntr.com",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://reviewhuntr.com/assets/img/logo/500pxLogo.jpg"
+          },
+          "publishingPrinciples": "https://reviewhuntr.com/about/"
+      }
+  }
+</script></body></html>
