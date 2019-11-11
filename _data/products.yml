@@ -315,4 +315,13 @@
   short-name: Razer Huntsman Elite
   imgs: [ "Razer-Huntsman.jpg" ]
   asin: B07DHNX18W
-  
+- id: 55
+  name: Razer Phone 2
+  short-name: Razer Phone
+  imgs: [ "Razer-phone.jpg" ]
+  asin: B07H9V6PHZ
+- id: 56
+  name: Apple Watch Series 5
+  short-name: Apple Watch
+  imgs: [ "Apple-Watch.jpg" ]
+  asin: B07XQSJ7Q5
