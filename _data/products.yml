@@ -325,3 +325,23 @@
   short-name: Apple Watch
   imgs: [ "Apple-Watch.jpg" ]
   asin: B07XQSJ7Q5
+- id: 57
+  name: Acer Aspire 5
+  short-name: Acer Aspire 
+  imgs: [ "Acer-Aspire.jpg" ]
+  asin: B07RF1XD36
+- id: 58
+  name:  DJI Spark Remote Control Combo
+  short-name:  DJI Spark  
+  imgs: [ "DJI-Spark.jpg" ]
+  asin: B075TDRS2M
+- id: 59
+  name:  Gravity Blanket
+  short-name:  Gravity  
+  imgs: [ "Gravity-Blanket.jpg" ]
+  asin: B07BN75Z3R
+- id: 60
+  name:  Dell Inspiron 14 2-in-1 laptop
+  short-name:  Dell Inspiron 14 
+  imgs: [ "Dell-Inspiron.jpg" ]
+  asin: B07KY83DPV
