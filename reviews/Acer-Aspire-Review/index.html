@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Acer Aspire 5 - Review - ReviewHuntr.com - The best reviews on the internet.</title><meta content="ReviewHuntr.com - The best reviews on the internet." property="og:site_name"><meta content="Acer Aspire 5 - Review" property="og:title"><meta content="article" property="og:type"><meta content="ReviewHuntr.com is creating the best reviews on the internet." property="og:description"><meta content="https://reviewhuntr.com/reviews/Acer-Aspire-Review/" property="og:url"><meta content="2019-11-13T00:00:00+00:00" property="article:published_time"><meta content="https://reviewhuntr.com/about/" property="article:author"><meta content="https://reviewhuntr.com/assets/img/Acer-Aspire.jpg" property="og:image"><meta content="Acer Aspire" property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@"><meta name="twitter:creator" content="@"><meta name="twitter:title" content="Acer Aspire 5 - Review"><meta name="twitter:url" content="https://reviewhuntr.com/reviews/Acer-Aspire-Review/"><meta name="twitter:description" content="ReviewHuntr.com is creating the best reviews on the internet."><meta name="twitter:image:src" content="https://reviewhuntr.com/assets/img/Acer-Aspire.jpg"><meta name="description" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta property="og:image" content="https://reviewhuntr.com/assets/img/logo/500pxLogo.jpg"><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicon/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="theme-color" content="#263959"><meta name="msapplication-navbutton-color" content="#263959"><meta name="apple-mobile-web-app-status-bar-style" content="#263959"><link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="/assets/css/main.css"> <script src='https://platform-api.sharethis.com/js/sharethis.js#property=5d90b2b1ddd24e0019459cbb&product=inline-share-buttons'></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="/assets/js/infinite.js"></script></head><body><div class="wrapper"> <aside class="sidebar"> <header><div class="about"><div class="cover-author-image"> <a href="/"><img src="/assets/img/logo/500pxLogo.jpg" alt="ReviewHuntr"></a></div><p>The best reviews on the internet.</p></div> <nav class="nav"> <a class="nav-item" href="/reviews">Reviews</a> <a class="nav-item" href="https://discord.gg/YTd6pYa" target="_blank">Discord</a> <a class="nav-item" href="/about">About</a> </nav> </header> <footer><div class="copyright"><p>2019 © ReviewHuntr</p></div> </footer> </aside><div class="content-box clearfix"> <script> 
+var reviewHTML = '<div class="reviews">'+
+            '  <div id="suggested-reviews" class="suggested-reviews">'+
+            '    <h4>Suggested reviews for you</h4>'+
+            '    <ul class="suggested-reviews-list">'+
+            '      <li><a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-4" id="suggested-reviews-4"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-5" id="suggested-reviews-5"></a></li>'+
+            '    </ul>'+
+            '  </div>'+
+            '</div>';
+
+    window.addEventListener('load', function() {
+      fetch(window.location.origin+"/api-reviews.json")
+      .then(res => res.json())
+      .then(out => {
+
+        let entry = document.getElementsByClassName("wrap-content")[0]
+        let reviews = document.createElement('div')
+        reviews.innerHTML = reviewHTML
+
+        let afterMe = entry.children[Math.ceil(entry.childElementCount / 2) - 1] 
+
+        entry.insertBefore(reviews, afterMe)
+
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+        }
+    
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
+
+
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script><article class="article-page"><div class="page-content"><div class="page-cover-image"> <figure> <img class="page-image" src="/assets/img/posts/Acer-Aspire.jpg" alt="Acer+Aspire+5+-+Review"></figure></div><div class="wrap-content"> <header class="header-page"><h1 class="page-title">Acer Aspire 5 - Review</h1><span class="post-author">Hamza Tariq</span><div class="page-date"><span>2019, Nov 13    </span></div> </header><div class="page-share"><div class="sharethis-inline-share-buttons"></div></div><p>The <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is a new slim laptop with all of the features and power you need from a standard laptop, in a super thin and lightweight package. The Aspire 5 weighs in at just under five pounds and is shockingly light for its 14-15’’ size. Chock full of different features, the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is full of surprises. Within the laptop, you will find an AMD Radeon Vega 3 GPU, an AMD Ryzen 3 dual-core processor, an innovative speaker design utilizing Acer TrueHarmony for deeper and better volume, and a full set of ports. This includes two USB 3 ports, one USB type C port, an HDMI 1 port, and more. Thin laptops, for the longest time, have essentially been a cheaper option for those who can’t buy a regular laptop. When you consider that laptops are already a cheaper option for those who can’t buy a PC, thin laptops might seem like they can’t hold up when compared with other options. With the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span>, all of that has changed. While you still won’t be getting PC levels of computing power here, you will be getting an impressively powerful laptop, for a much lower price. Outside of technological aspects, the build of the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire</a></span> itself is quite good for the low price point of only $350. The Aspire 5 has an aluminum frame and is resistant to flexing and bending. When you consider the multiple color options as well, the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is great if you want to carry your laptop with you at all times. With its lightweight build, sleek and slim design, thin bezels, and cheap price, the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is perfect for people who want to be able to play games or do work on the go. The included AMD Radeon Vega 3 GPU allows for incredibly smooth and speedy gaming and the Ryzen 3 dual-core processor uses less power than some other processors while still allowing for good performance. The battery life on the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is astounding as well, lasting up to 11 hours under some circumstances. Overall the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is an absolute beast for a laptop of its size. The <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> also has the benefit of a very high-quality keyboard, with no soft or mushy keys, and even backlighting. With Acer Color Intelligence, the colors on the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> are vibrant and high quality, and you can work or game for much longer periods in the night with Acer BlueLightShield. With the previously mentioned Acer TrueHarmony, music and other audio come to life on the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span>. The Aspire 5 is also compatible with both Amazon Alexa and Microsoft Cortana. The <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is good for gaming, but it shines when it comes to work. Be it for school, university or college, or a job, the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> has you covered. When working with any kind of software, or when having multiple tabs or programs open at the same time, the Aspire 5 still runs smoothly and quickly. Programs open quickly and run with little to no issue. In addition to that, the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is well built for working as well. It manages to have a wide variety of ports while still looking clean and simple from the outside, and there are no fancy overcomplicated designs on the cover or the bottom of the laptop. The Aspire 5 is lightweight and small and can slip right into your backpack with ease and the aluminum cover makes the design stand out while still being aesthetically pleasing. While the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> comes with a decent 4 gigabytes of ram, it can easily be upgraded to have more if you want. The <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> has a light and stylish build and is thinner than most laptops currently while still performing on par with them. The Aspire 5 has access to a great selection of ports for the price, and still manages to keep a simple aesthetic. It isn’t necessarily the best laptop for gaming and the base RAM size is small, but it can easily be upgraded and can still run most games fairly well. It has a high-quality build with a shockingly good keyboard, even including a backlight. The simple design of the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is completed with the premium aluminum cover. Colors and sounds come to life with Acer TrueHarmony and Acer Color Intelligence, and even with all of that, it still manages to run smoothly with almost all software.</p><h2 id="conclusion">Conclusion</h2><p>In conclusion, the <span><a class="product-link" href="https://www.amazon.com/dp/B07RF1XD36?tag=reviewhuntr-20" target="_blank">Acer Aspire 5</a></span> is currently one of the best cheap laptops you can get right now, especially if you want to game or work on a budget</p><div class="page-footer"><div class="page-share"><div class="sharethis-inline-share-buttons"></div></div><div class="page-tag"><a href="https://reviewhuntr.com/reviews#Acer+Aspire" class="tag"># Acer Aspire</a></div></div><div> ReviewHuntr is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com.</div></div></div> </article><div class="post" style="display:none"><a class="post-thumbnail" style="background-image:url('/assets/img/posts/Acer-Aspire.jpg')" href="/reviews/Acer-Aspire-Review/"></a><div class="post-content"><h2 class="post-title"><a href="/reviews/Acer-Aspire-Review/">Acer Aspire 5 - Review</a></h2><p>The Acer Aspire 5 is a new slim laptop with all of the features and power you need from a standard laptop, in a super thin and lightweight package. The...</p><span class="post-author">Hamza Tariq—</span> <span class="post-words">4 minute read</span></div></div></div><div class="infinite-spinner"></div></div><script>-1!==document.location.hostname.search("reviewhuntr.com")&&(!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-121890486-4","auto"),ga("send","pageview"))</script><script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "headline": "Acer Aspire 5 - Review",
+      "description": "The Acer Aspire 5 is a new slim laptop with all of the features and power you need from a standard laptop, in a super thin and lightweight package. The Aspire 5 weighs in at just under five pounds and is shockingly light for its 14-15’’ size. Chock full of different features, the Acer Aspire 5 is full of surprises. Within the laptop, you will find an AMD Radeon Vega 3 GPU, an AMD Ryzen 3 dual-core processor, an innovative speaker design utilizing Acer TrueHarmony for deeper and better volume, and a full set of ports. This includes two USB...",
+      "image": ["https://reviewhuntr.com/assets/img/posts/Acer-Aspire.jpg"],
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://reviewhuntr.com/reviews/Acer-Aspire-Review/"
+      },
+      "datePublished": "2019-11-13 00:00:00 +0000",
+      "dateModified": "2019-11-13 00:00:00 +0000",
+      "isAccessibleForFree": "True",
+      "itemReviewed": {
+          "@type": ["Product"],
+          "name": "Acer Aspire 5",
+          "productID": "asin:B07RF1XD36",
+          "sku": "asin:B07RF1XD36",
+          "review": {
+            "itemReviewed": "Acer Aspire 5",
+            "author": {
+              "@type": "Person",
+              "name": "Hamza Tariq"
+            },
+            "reviewAspect": "Product opinion reviews",
+            "reviewBody": "The Acer Aspire 5 is a new slim laptop with all of the features and power you need from a standard laptop, in a super thin and lightweight package. The Aspire 5 weighs in at just under five pounds and is shockingly light for its 14-15’’ size. Chock full of different features, the Acer Aspire 5 is full of surprises. Within the laptop, you will find an AMD Radeon Vega 3 GPU, an AMD Ryzen 3 dual-core processor, an innovative speaker design utilizing Acer TrueHarmony for deeper and better volume, and a full set of ports. This includes two USB 3 ports, one USB type C port, an HDMI 1 port, and more. Thin laptops, for the longest time, have essentially been a cheaper option for those who can’t buy a regular laptop. When you consider that laptops are already a cheaper option for those who can’t buy a PC, thin laptops might seem like they can’t hold up when compared with other options. With the Acer Aspire 5, all of that has changed. While you still won’t be getting PC levels of computing power here, you will be getting an impressively powerful laptop, for a much lower price. Outside of technological aspects, the build of the Acer Aspire itself is quite good for the low price point of only $350. The Aspire 5 has an aluminum frame and is resistant to flexing and bending. When you consider the multiple color options as well, the Acer Aspire 5 is great if you want to carry your laptop with you at all times. With its lightweight build, sleek and slim design, thin bezels, and cheap price, the Acer Aspire 5 is perfect for people who want to be able to play games or do work on the go. The included AMD Radeon Vega 3 GPU allows for incredibly smooth and speedy gaming and the Ryzen 3 dual-core processor uses less power than some other processors while still allowing for good performance. The battery life on the Acer Aspire 5 is astounding as well, lasting up to 11 hours under some circumstances. Overall the Acer Aspire 5 is an absolute beast for a laptop of its size.  The Acer Aspire 5 also has the benefit of a very high-quality keyboard, with no soft or mushy keys, and even backlighting. With Acer Color Intelligence, the colors on the Acer Aspire 5 are vibrant and high quality, and you can work or game for much longer periods in the night with Acer BlueLightShield. With the previously mentioned Acer TrueHarmony, music and other audio come to life on the Acer Aspire 5. The Aspire 5 is also compatible with both Amazon Alexa and Microsoft Cortana. The Acer Aspire 5 is good for gaming, but it shines when it comes to work. Be it for school, university or college, or a job, the Acer Aspire 5 has you covered. When working with any kind of software, or when having multiple tabs or programs open at the same time, the Aspire 5 still runs smoothly and quickly. Programs open quickly and run with little to no issue. In addition to that, the Acer Aspire 5 is well built for working as well. It manages to have a wide variety of ports while still looking clean and simple from the outside, and there are no fancy overcomplicated designs on the cover or the bottom of the laptop. The Aspire 5 is lightweight and small and can slip right into your backpack with ease and the aluminum cover makes the design stand out while still being aesthetically pleasing. While the Acer Aspire 5 comes with a decent 4 gigabytes of ram, it can easily be upgraded to have more if you want.  The Acer Aspire 5 has a light and stylish build and is thinner than most laptops currently while still performing on par with them. The Aspire 5 has access to a great selection of ports for the price, and still manages to keep a simple aesthetic. It isn’t necessarily the best laptop for gaming and the base RAM size is small, but it can easily be upgraded and can still run most games fairly well. It has a high-quality build with a shockingly good keyboard, even including a backlight. The simple design of the Acer Aspire 5 is completed with the premium aluminum cover. Colors and sounds come to life with Acer TrueHarmony and Acer Color Intelligence, and even with all of that, it still manages to run smoothly with almost all software.  Conclusion  In conclusion, the Acer Aspire 5 is currently one of the best cheap laptops you can get right now, especially if you want to game or work on a budget",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "ratingCount": "1"
+          },
+          "offers": "",
+          "brand": {
+            "@type": "Thing",
+            "name": ""
+          },
+          "description": "Acer Aspire 5",
+          "image": ["https://reviewhuntr.com/assets/img/posts/Acer-Aspire.jpg"]
+      },
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "author": {
+          "@type": "Person",
+          "name": "Hamza Tariq",
+          "description": "",
+          "sameAs": "https://reviewhuntr.com/about",
+          "image": {
+              "@type": "ImageObject",
+              "url": ""
+          },
+          "givenName": "",
+          "familyName": "",
+          "alternateName": "Hamza Tariq",
+          "publishingPrinciples": "https://reviewhuntr.com/about/"
+      },
+      "publisher": {
+          "@type": "Organization",
+          "name": "ReviewHuntr",
+          "description": "ReviewHuntr.com is creating the best reviews on the internet.",
+          "sameAs": "https://reviewhuntr.com",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://reviewhuntr.com/assets/img/logo/500pxLogo.jpg"
+          },
+          "publishingPrinciples": "https://reviewhuntr.com/about/"
+      }
+  }
+</script></body></html>
