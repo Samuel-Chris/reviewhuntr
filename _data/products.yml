@@ -345,3 +345,8 @@
   short-name:  Dell Inspiron 14 
   imgs: [ "Dell-Inspiron.jpg" ]
   asin: B07KY83DPV
+- id: 61
+  name:  Oculus Quest
+  short-name:  Oculus  
+  imgs: [ "Oculus-Quest.jpg" ]
+  asin: B07HNW68ZC
