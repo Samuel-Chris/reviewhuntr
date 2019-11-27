@@ -63,3 +63,5 @@ plugins:
   - octopress-minify-html
 
 exclude: ["node_modules", ".bundle", ".sass-cache", "vendor", "gulpfile.js", "package.json", "yarn.lock"]
+
+minify_html: false
