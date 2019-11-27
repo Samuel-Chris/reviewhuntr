@@ -1,28 +1,60 @@
 document.addEventListener('DOMContentLoaded', function(){ 
   const $ = (el) => document.querySelector(el)
 
-  let postURLs,
+  let postURLs = [],
       isFetchingPosts = false,
       shouldFetchPosts = true,
       postsToLoad = $(".content-box").childNodes.length,
-      loadNewPostsThreshold = 3000;
+      loadNewPostsThreshold = 3000,
+      baseUrl = `http://reviewhuntr.com`,
+      index = 0,
+      postURLs2 = []
   
-  // Load the JSON file containing all URLs
-  fetch('/api-posts.json')
-    .then(response => {
-      return response.json()
+  //Load the JSON file containing all URLs
+  // fetch('/api-posts.json')
+  //   .then(response => {
+  //     return response.json()
+  //   })
+  //   .then(data => {
+  //     postURLs = data["posts"];
+
+  //     // If there aren't any more posts available to load than already visible, disable fetching
+  //     if (postURLs.length <= postsToLoad) {
+  //       disableFetching();    
+  //     }
+  //   })
+  //   .catch(err => {
+  //     console.log(err)
+    // })
+
+  
+  //Fetch
+  
+  function fetchPostsWithNewIndex() {
+    formattedIndex = ("0" + index).slice(-2);
+    console.log("Index here =====" + formattedIndex)
+    fetch(`${baseUrl}/api-posts-${formattedIndex}.json`)
+    .then(res => {
+      return res.json()
     })
     .then(data => {
-      postURLs = data["posts"];
-
-      // If there aren't any more posts available to load than already visible, disable fetching
+      console.log(data)
+      postURLs = postURLs.concat(data)
+      index++
+      console.log(postURLs) 
       if (postURLs.length <= postsToLoad) {
-        disableFetching();    
-      }
+          disableFetching();    
+        }
     })
     .catch(err => {
       console.log(err)
+      if (err) {
+        return;
+      }
     })
+  }
+
+  fetchPostsWithNewIndex();
  
   // If there's no spinner, it's not a page where posts should be fetched
   if ($(".infinite-spinner").length < 1) {
@@ -36,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
       
       if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 100) {
         // alert("you're at the bottom of the page");
+        fetchPostsWithNewIndex();
         fetchPosts();
       } 
       
@@ -77,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function(){
   function fetchPostWithIndex(index, callback) {
       var postURL = postURLs[index];
           console.log(postURL)
-      fetch(postURL)
+      fetch(baseUrl+"/"+postURL)
       .then(response => {
         return response.text()
       })
