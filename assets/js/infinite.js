@@ -8,53 +8,59 @@ document.addEventListener('DOMContentLoaded', function(){
       loadNewPostsThreshold = 3000,
       baseUrl = `http://reviewhuntr.com`,
       index = 0,
-      postURLs2 = []
+      useNewAPI = true
   
-  //Load the JSON file containing all URLs
-  // fetch('/api-posts.json')
-  //   .then(response => {
-  //     return response.json()
-  //   })
-  //   .then(data => {
-  //     postURLs = data["posts"];
+  // Function to fetch Post Urls and load into array
 
-  //     // If there aren't any more posts available to load than already visible, disable fetching
-  //     if (postURLs.length <= postsToLoad) {
-  //       disableFetching();    
-  //     }
-  //   })
-  //   .catch(err => {
-  //     console.log(err)
-    // })
 
-  
-  //Fetch
-  
-  function fetchPostsWithNewIndex() {
-    formattedIndex = ("0" + index).slice(-2);
-    console.log("Index here =====" + formattedIndex)
-    fetch(`${baseUrl}/api-posts-${formattedIndex}.json`)
-    .then(res => {
-      return res.json()
+  function fetchFromOldAPI() {
+    fetch('/api-posts.json')
+    .then(response => {
+      return response.json()
     })
     .then(data => {
-      console.log(data)
-      postURLs = postURLs.concat(data)
-      index++
-      console.log(postURLs) 
+      postURLs = data["posts"];
+
+      // If there aren't any more posts available to load than already visible, disable fetching
       if (postURLs.length <= postsToLoad) {
-          disableFetching();    
-        }
+        disableFetching();    
+      }
     })
     .catch(err => {
       console.log(err)
-      if (err) {
-        return;
-      }
     })
   }
+  
+  function fetchFromNewAPI() {
+    if (useNewAPI) {
+      // console.log(`called ${index} times`)
+      formattedIndex = ("0" + index).slice(-2);
+      // console.log("Index here =====" + formattedIndex)
+      fetch(`${baseUrl}/api-posts-${formattedIndex}.json`)
+      .then(res => {
+        return res.json()
+      })
+      .then(data => {
+        postURLs = postURLs.concat(data)
+        index++
+        // console.log(postURLs)
+        if (postURLs.length <= postsToLoad) {
+            disableFetching();    
+          }
+      })
+      .catch(err => {
+        if (err && formattedIndex=="00") {
+          fetchFromOldAPI()
+          useNewAPI = false
+        }
+      })
+    } else {
+      return;
+    }
+  }
 
-  fetchPostsWithNewIndex();
+//Fetch from the first link
+  fetchFromNewAPI();
  
   // If there's no spinner, it's not a page where posts should be fetched
   if ($(".infinite-spinner").length < 1) {
@@ -68,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function(){
       
       if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 100) {
         // alert("you're at the bottom of the page");
-        fetchPostsWithNewIndex();
+        fetchFromNewAPI();
         fetchPosts();
       } 
       
@@ -102,14 +108,15 @@ document.addEventListener('DOMContentLoaded', function(){
               isFetchingPosts = false;
             }
           };
-  		console.log("post count: ", postCount)
+  		// console.log("post count: ", postCount)
       fetchPostWithIndex(postCount + loadedPosts, callback);
   }
 
 
   function fetchPostWithIndex(index, callback) {
+      // console.log("indexx == " + index)
       var postURL = postURLs[index];
-          console.log(postURL)
+          // console.log(postURL)
       fetch(baseUrl+"/"+postURL)
       .then(response => {
         return response.text()
@@ -118,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function(){
         let parser = new DOMParser();
         let doc = parser.parseFromString(html, "text/html");
         let post = doc.querySelector(".post")
-        console.log(post)
+        // console.log(post)
         post.style.display = "inherit";
         $(".content-box").appendChild(post);
         callback();
